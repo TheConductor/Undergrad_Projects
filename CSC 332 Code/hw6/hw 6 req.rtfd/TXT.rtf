@@ -1,0 +1,74 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf340
+{\fonttbl\f0\fswiss\fcharset0 ArialMT;\f1\froman\fcharset0 TimesNewRomanPSMT;}
+{\colortbl;\red255\green255\blue255;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\margl1440\margr1440\vieww25100\viewh14220\viewkind0
+\deftab720
+\pard\pardeftab720\sa80\qc
+
+\f0\b\fs42 \cf0 \'a0\
+CSC 332 \'96 Fall 2012 \'96 Homework 6\
+\pard\pardeftab720\qc
+
+\f1\fs24 \cf0 Assigned: Thursday 10/11/2012
+\b0 \
+
+\b Due: Monday 10/22/2012
+\b0\fs42 \
+\pard\pardeftab720\li960
+\cf0 \'a0\
+\pard\pardeftab720\li960\fi-480
+\cf0 5.\'a0\'a0\'a0\'a0\'a0 Theoretically, the average depth of any node in a randomly generated binary search tree is O(log n).\'a0 However, very smart computer scientists have been able to come up with an even better answer.\'a0\'a0 They have been able to prove that the average depth is O(c log n) where 
+\i c
+\i0  is a 
+\b known
+\b0  constant and 
+\i log
+\i0  is the natural logarithm.\'a0 Our task is to experimentally determine what c might be.\'a0 \'a0\
+\pard\pardeftab720\li960
+\cf0 \'a0\
+Further, smart computer scientists have been able to determine that the average height of a randomly generated binary search tree is O(d log n) where d is 
+\b known
+\b0  constant and log is the natural logarithm.\'a0\'a0 So, we\'92ll try to experimentally determine what 
+\i d
+\i0  might be.\
+\'a0\
+\pard\pardeftab720\li1920\fi-480
+\cf0 a.\'a0\'a0\'a0\'a0\'a0\'a0 Instead of generating trees of size N = 1024, we are going to generate trees of N = 100,000 up to 1,000,000.\'a0 For each of these sizes we will calculate the average height and average depth.\'a0 Then we can plot these functions on a scatter plot.\
+\pard\pardeftab720\li1920
+\cf0 \'a0\
+\pard\pardeftab720\li1920\fi-480
+\cf0 b.\'a0\'a0\'a0\'a0\'a0 You can use curve fitting as part of Excel to get an estimate for c and d.\'a0\'a0\
+\pard\pardeftab720\li2880\fi-2880
+\cf0 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 i.\'a0\'a0\'a0\'a0\'a0 In Excel, create a scatter plot of your data.\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 ii.\'a0\'a0\'a0\'a0\'a0 Click on the line you wish to fit.\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 iii.\'a0\'a0\'a0\'a0\'a0 Right click and select \'93Add Trendline\'94.\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 iv.\'a0\'a0\'a0\'a0\'a0 In the Format Trendline dialog box, select the radio button \'93Logarithmic\'94 and the check box \'93Display Equation on Chart\'94\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 v.\'a0\'a0\'a0\'a0\'a0 You\'92ll see an equation like \'937.32 ln(x) \'96 1.14\'94 added to your chart.\'a0\'a0 That number, 7.32, is the constant we were looking for.\'a0 Well, actually the number is not going to be 7.32 for either of them, but you get the idea.\
+\pard\pardeftab720\li2880
+\cf0 \'a0\
+\pard\pardeftab720\li960\fi-480
+\cf0 6.\'a0\'a0\'a0\'a0\'a0 Email me a .zip file containing your java programs and your excel file with graphs showing the trendline calculated for \'93Height\'94 and \'93AvgDepth\'94.\
+\pard\pardeftab720\li960
+\cf0 \'a0\
+\pard\pardeftab720\qc
+\cf0 Your graph will look something like this:
+\fs24 \
+\
+\pard\pardeftab720\li480
+\cf0 \'a0\
+\pard\pardeftab720\sa80
+
+\f0\b\fs34 \cf0 Programming Style\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls1\ilvl0
+\f1\b0\fs32 \cf0 {\listtext	\'95	}Use consistent indenting\'a0 for statements within a block.\
+{\listtext	\'95	}Begin your program with an initial comment that contains your name, date, and a description of the program.\
+{\listtext	\'95	}Begin each method with a comment that includes the purpose of the method.\
+{\listtext	\'95	}Comment non-obvious variables and code segments.\
+\pard\pardeftab720
+
+\fs24 \cf0 \'a0\
+Late programs will be penalized by 10 points per day late up to 5 days.\'a0\'a0 If a student fails to turn in the assignment within 5 days of the due date, the student will receive an 'F' in the course.\
+}

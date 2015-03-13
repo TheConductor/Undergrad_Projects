@@ -1,0 +1,104 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187
+{\fonttbl\f0\froman\fcharset0 TimesNewRomanPSMT;}
+{\colortbl;\red255\green255\blue255;\red26\green26\blue26;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat2\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid101\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat3\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid201\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat4\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid301\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat6\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid401\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid5}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}}
+\margl1440\margr1440\vieww25100\viewh14220\viewkind0
+\deftab720
+\pard\pardeftab720\sa240
+
+\f0\fs24 \cf0 Alex Aziz\
+9/17/12\
+CSC 332\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls1\ilvl0\cf0 {\listtext	1.	}An algorithm takes 20 ms (milliseconds) for input size 100.\'a0 How long will it take for input size 250 if the running time is the following (assume low-order terms are negligible):\
+\pard\pardeftab720\li1920\fi-480
+\cf0 a)\'a0\'a0\'a0\'a0\'a0 Linear\
+	250/100 =2.5\
+	2.5*20= \ul 50ms\ulnone \
+b)\'a0\'a0\'a0\'a0\'a0 O(N log N)\
+	\expnd0\expndtw0\kerning0
+20/(100 log 100) = t/(250 log 250)\
+	t = (20*(250 log 250))/(100 log 100)\
+	t = \kerning1\expnd0\expndtw0 \ul \ulc2 59.9485002168ms\ulnone \
+c)\'a0\'a0\'a0\'a0\'a0 Quadratic\
+	20\expnd0\expndtw0\kerning0
+/100^2 = t/250^2\
+	t = (20*250^2)/(100^2)\
+\kerning1\expnd0\expndtw0 	t = 125\ul ms\ulnone \
+d)\'a0\'a0\'a0\'a0 Cubic\
+	20\expnd0\expndtw0\kerning0
+/100^3 = t/250^3\
+	t = (20*250^3)/(100^3)\
+	t = \expnd0\expndtw0\kerning0
+\ul 312.5ms\kerning1\expnd0\expndtw0 \ulnone \
+\pard\pardeftab720\li1920
+\cf0 \'a0\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls2\ilvl0\cf0 {\listtext	2.	}An algorithm takes 20 ms (milliseconds) for input size 250.\'a0\'a0 How large a problem can be solved in one hour if the running time is the following (assume low-order terms are negligible):\
+\pard\pardeftab720\li1920\fi-480
+\cf0 a)\'a0\'a0\'a0\'a0\'a0 Linear\
+	3600000\expnd0\expndtw0\kerning0
+/n = 20/100\
+	(100/20)*\kerning1\expnd0\expndtw0 3600000=n\
+	n = \ul 18000000\ulnone \
+b)\'a0\'a0\'a0\'a0\'a0 O(N log N)\
+	3600000\expnd0\expndtw0\kerning0
+/(n log n) =20/(100 log 100)\
+	n log n = (\kerning1\expnd0\expndtw0 3,600,000 * \expnd0\expndtw0\kerning0
+(100 log 100))/20\
+	n = \expnd0\expndtw0\kerning0
+\ul 3.6e7\kerning1\expnd0\expndtw0 \ulnone \
+c)\'a0\'a0\'a0\'a0\'a0 Quadratic\
+	3600000\expnd0\expndtw0\kerning0
+/n^2 = 20/100^2\
+\kerning1\expnd0\expndtw0 	n = ((\expnd0\expndtw0\kerning0
+100^2/20)* \kerning1\expnd0\expndtw0 3600000)^(1/2)\
+	n =\ul  42426.4068712\ulnone \
+d)\'a0\'a0\'a0\'a0 Cubic\
+	3600000\expnd0\expndtw0\kerning0
+/n^3 = 20/100^3\
+\kerning1\expnd0\expndtw0 	n = ((\expnd0\expndtw0\kerning0
+100^3/20)* \kerning1\expnd0\expndtw0 3600000)^(1/3)\
+	n =\ul  5646.21617329\ulnone \
+\pard\pardeftab720\li1920
+\cf0 \'a0\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls3\ilvl0\cf0 {\listtext	3.	}Determine, for the typical algorithms that you use to perform calculations by hand, the running time (Big O) to do the following:\
+\pard\pardeftab720\li1920\fi-480
+\cf0 a)\'a0\'a0\'a0\'a0\'a0 Add two N-digit numbers.\
+	O(N)\
+b)\'a0\'a0\'a0\'a0\'a0 Multiply two N-digit numbers.\
+	O(2*N)\
+c)\'a0\'a0\'a0\'a0\'a0 Divide two N-digit numbers.\
+	O(2^N)\
+\pard\pardeftab720\li1920
+\cf0 \'a0\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls4\ilvl0\cf0 {\listtext	4.	}Show that X\super 62\nosupersub  can be completed with only eight multiplications.\'a0\
+\pard\tx720\pardeftab720
+\cf0 		X*X = X^2\
+		X^2*X^2=X^4\
+		X^4 * X^4 = X^8\
+		X^8 * X^8 =X^16\
+		X^16 * X^4 =X^20\
+		X^20 * X^20 = X^40\
+		X^40 * X^2 = X^42\
+		X^42 * X^20 = X^62\
+\'a0\
+	5.	Exercise 2.16 on page 52.\'a0\'a0 This requires implementing a program.\'a0\'a0 Note that the author neglects to give you the base case(s) of this recursive algorithm.\'a0 You\'92ll have to figure that part out.\'a0 For the rest of the method, just implement it as given.\'a0\'a0 Make sure you test the code on some inputs to make sure it works.\'a0\'a0 By the way, there should be absolutely no for-loops in this implementation of gcd.\'a0\'a0 Notice the definition the author gives you is strictly recursive.\'a0\
+\pard\pardeftab720
+\cf0 \'a0\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls5\ilvl0\cf0 {\listtext	6.	}Exercise 2.20. This requires implementing a program.\'a0 For the last parts where you are testing your code on large numbers, you need to try a 20-bit number that is prime and then a 40-bit number that is prime.\'a0\'a0 Time how long it takes each to run.\'a0\'a0\
+\pard\tx720\pardeftab720
+\cf0 		b. N^(1/2)\
+		c. log\sub 2\nosupersub N\
+		d. (log\sub 2\nosupersub N)/2\
+		e. 20 bit number -> 1048571 time =6203700000ns	40 bit = 1099511993 time = 3282208000\
+		f. It is more reasonable to give the run times in terms of N as it a more accessible reflection of numeric size of the input.\
+}
